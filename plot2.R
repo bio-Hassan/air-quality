@@ -1,0 +1,7 @@
+library(dplyr)
+NEI <- readRDS("summarySCC_PM25.rds")
+BaltimoreData <- filter(NEI, fips == "24510")
+total <- aggregate(Emissions ~ year, BaltimoreData, sum)
+png(filename = "plot2.png", width = 480, height = 480)
+plot(total$year, total$Emissions, type = "o", col = "steelblue3", main = expression("Total Baltimore "~ PM[2.5]~ "Emissions by Year"), ylab = expression("Total Baltimore "~   PM[2.5] ~ "Emissions"), xlab = "Year")
+dev.off()
