@@ -17,10 +17,10 @@ The zip file contains two files:
 
 2- Source Classification Code Table (\color{red}{\verb|Source_Classification_Code.rds|}Source_Classification_Code.rds): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source.
 
-#Assignment:
+# Assignment:
 The overall goal of this assignment is to explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United states over the 10-year period 1999–2008.
 
-#Questions:
+# Questions:
 1-      Have total emissions from PM2.5 decreased in the United States from 1999         to 2008? Using the base plotting system, make a plot showing the total           PM2.5 emission from all sources for each of the years 1999, 2002, 2005,          and 2008.
 
 2-      Have total emissions from PM2.5 decreased in the Baltimore City, Maryland         (\color{red}{\verb|fips == "24510"|}fips == "24510") from 1999 to 2008?          Use the base plotting system to make a plot answering this question.    
